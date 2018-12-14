@@ -1,0 +1,122 @@
+@charset "UTF-8";
+ul{list-style:none;}
+a {text-decoration: none;}
+h4
+{
+	font-weight: bold;
+	font-size: 14px;
+	color:#006;
+	margin-top: 12px;
+	text-align:right;
+	padding: 0;
+}
+
+h5
+{
+	font-weight: bold;
+	font-size: 14px;
+	color:#C00;
+	margin-top: 12px;
+	text-align:right;
+	padding: 0;
+}
+
+
+
+h3
+{
+	position: relative;
+	width: 50%;
+	font-size: 18px;
+	font-weight: normal;
+	padding: 6px 20px 6px 20px;
+	margin: -100px 10px 55px 5px;
+	color: #FFC;
+	background-color: #C00;
+	-webkit-box-shadow: 0px 2px 5px #888;
+	-moz-box-shadow: 0px 2px 5px #888;
+	box-shadow: 0px 2px 5px #888;
+	opacity:0.9;
+	text-align:right;
+}
+h3:after
+{
+	content: ' ';
+	position: absolute;
+	width: 0;
+	height: 0;
+	left: 0px;
+	top: 100%;
+	border-width: 5px 10px;
+	border-style: solid;
+	border-color: #C66 #C66 transparent transparent;
+}
+.time-line li:before{
+content:"";
+   position:absolute;
+   top:0;
+   right:0;
+   border-width:0 16px 16px 0;
+   border-style:solid;
+   border-color:#a7d2ff #fff;}
+.time-line li {
+	
+	/*
+	text-decoration:none;
+	background: rgba(114,171,229,0.6);
+	-webkit-border-top-left-radius:13px;
+	-moz-border-radius-topleft:13px;
+	border-top-left-radius:13px;
+	-webkit-border-bottom-right-radius:13px;
+	-moz-border-radius-bottomright:13px;
+	border-bottom-right-radius:13px;
+	display: block; 
+	
+	width: 500px; 
+	height: 100%; 
+	margin: 0 5px 5px 0; 
+	padding: 10px;
+	font: 12px Arial; 
+	text-align: left; 
+	color: #006;*/
+	position:relative;
+	width:500px;
+	height: 100%; 
+	margin: 0 5px 5px 0; 
+	padding: 10px;
+	color:#006;
+	background:#daecff;
+	}
+.time-line img
+{
+	margin-left: 25px;
+	-webkit-border-top-left-radius:13px;
+	-moz-border-radius-topleft:13px;
+	border-top-left-radius:13px;
+	-webkit-border-bottom-right-radius:13px;
+	-moz-border-radius-bottomright:13px;
+	border-bottom-right-radius:13px;
+}
+#tag-list {
+	margin-bottom: 20px;
+	margin-left: 1cm; 
+	width: 100%;
+	overflow: hidden; 
+	padding: 10px 0;
+	
+	}
+#tag-list li {
+	display: inline-block;
+	}
+#tag-list li a {
+	text-transform: Uppercase; 
+	display: block; 
+	padding: 2px 2px; 
+	margin-right: 8px; 
+	font-family: Arial; 
+	font-weight: bold; 
+	color: #006;
+	}
+#tag-list li a:hover {color: #006;}
+#tag-list li a:visited {color: #006;}
+#tag-list li a.active {color: #006; border-bottom: 2px solid #C00;}

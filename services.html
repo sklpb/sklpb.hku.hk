@@ -1,0 +1,1096 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>The State Key Laboratory of Pharmaceutical Biotechnology HKU</title>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+<link rel="stylesheet" type="text/css" href="engine1/global.css"/>
+<link rel="stylesheet" type="text/css" href="engine1/tabs.css"/>
+
+<style type="text/css">
+/*
+.tabs {
+    position: relative;
+	margin: 20px 0px;
+	width: 1050px;
+}
+
+.tabs input {
+	position: absolute;
+	z-index: 1000;
+	width: auto;
+	height: 40px;
+	left: 0px;
+	top: 0px;
+	opacity: 0;
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+	cursor: pointer;
+}
+
+.tabs input#tab-2{
+	left: auto;
+}
+.tabs input#tab-3{
+	left: auto;
+}
+.tabs input#tab-4{
+	left: auto;
+}
+.tabs input#tab-5{
+	left: auto;
+}
+.tabs input#tab-6{
+	left: auto;
+}
+
+.tabs label {
+	background: #7fbfff;
+	background: -moz-linear-gradient(top, #7fbfff 0%, #72abe5 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#7fbfff), color-stop(100%,#72abe5));
+	background: -webkit-linear-gradient(top, #7fbfff 0%,#72abe5 100%);
+	background: -o-linear-gradient(top, #7fbfff 0%,#72abe5 100%);
+	background: -ms-linear-gradient(top, #7fbfff 0%,#72abe5 100%);
+	background: linear-gradient(top, #7fbfff 0%,#72abe5 100%);
+	font-size: 15px;
+	line-height: 40px;
+	height: 40px;
+	position: relative;
+	padding: 0 20px 40px 20px;
+	margin-bottom:-40px;
+    float: left;
+	display: block;
+	width: auto;
+	color: #3f5f80;
+	font-weight: bold;
+	text-align: center;
+	text-shadow: 1px 1px 1px rgba(255,255,255,0.3);
+	top: 0px;
+	text-transform: Capitalize;
+	
+    border-radius: 3px 3px 0 0;
+    box-shadow: 2px 0 2px rgba(0,0,0,0.1), -2px 0 2px rgba(0,0,0,0.1);
+}
+
+.tabs label:after {
+    content: '';
+	background: #72abe5;
+	position: absolute;
+	bottom: -8px;
+	left: 0;
+	width: 100%;
+	height: 8px;
+	display: block;
+}
+
+.tabs input:hover + label {
+	background: #7fbfff;
+	top: -8px;
+	-webkit-transition: top linear 0.2s;
+    -moz-transition: top linear 0.2s;
+    -o-transition: top linear 0.2s;
+    -ms-transition: top linear 0.2s;
+    transition: top linear 0.2s;
+}
+.tabs input:hover + label:after{
+	background: #7fbfff;
+}
+
+.tabs input:checked:hover + label {
+    top: 0;
+}
+.tabs input:checked:hover + label:after{
+	background: #e5f2ff;
+}
+.tabs input:checked:hover + label ~ .clear-shadow {
+    top: 0;
+	background: #e5f2ff;
+	-webkit-transition: none;
+	-moz-transition: none;
+	-o-transition: none;
+	-ms-transition: none;
+	transition: none;
+}
+
+.tabs input.tab-selector-1:hover + label.tab-label-1 ~ .clear-shadow{
+    z-index: 3;
+}
+
+.tabs input.tab-selector-2:hover + label.tab-label-2 ~ .clear-shadow {
+    z-index: 2;
+}
+
+.tabs input.tab-selector-3:hover + label.tab-label-3 ~ .clear-shadow {
+    z-index: 1;
+}
+
+.tabs input.tab-selector-4:hover + label.tab-label-4 ~ .clear-shadow {
+    z-index: 0;
+}
+
+.tabs input.tab-selector-5:hover + label.tab-label-5 ~ .clear-shadow {
+    z-index: 5;
+}
+
+.tabs input.tab-selector-6:hover + label.tab-label-6 ~ .clear-shadow {
+    z-index: 4;
+}
+
+.tabs label:first-of-type {
+    z-index: 6;
+    box-shadow: 2px 0 2px rgba(0,0,0,0.1);
+}
+
+.tab-label-2 {
+    z-index: 6;
+}
+
+.tab-label-3 {
+    z-index: 2;
+}
+
+.tab-label-4 {
+    z-index: 1;
+}
+
+.tab-label-5 {
+    z-index: 6;
+}
+.tab-label-6 {
+    z-index: 5;
+}
+
+.tabs input:checked + label {
+    background: #e5f2ff;
+	z-index:4;
+	-webkit-transition: top linear 0.2s;
+    -moz-transition: top linear 0.2s;
+    -o-transition: top linear 0.2s;
+    -ms-transition: top linear 0.2s;
+    transition: top linear 0.2s;
+}
+
+
+.clear-shadow {
+    background: #7fbfff;
+	position: relative;
+	top: 0;
+    height: 10px;
+	margin-bottom: -10px;
+    clear: both;
+	z-index: -2;
+    box-shadow: 0 -2px 3px -2px rgba(0,0,0,0.2);
+    border-radius: 3px;
+}
+
+
+
+.content {
+    background: #e5f2ff;
+	position: relative;
+    width: 800px;
+	height: 800px;
+	z-index: 6;
+	overflow: hidden;
+  	box-shadow: 0 -2px 3px -2px rgba(0,0,0,0.2), 0 2px 2px rgba(0,0,0,0.1);
+    border-radius: 0 3px 3px 3px;
+}
+
+.content div {
+    position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 100%;
+	padding: 10px 40px; 
+	overflow: hidden;
+	z-index: 1;
+    opacity: 0;
+    -webkit-transition: all linear 0.1s;
+    -moz-transition: all linear 0.1s;
+    -o-transition: all linear 0.1s;
+    -ms-transition: all linear 0.1s;
+    transition: all linear 0.1s;
+}
+
+.tabs input.tab-selector-1:checked ~ .content .content-1,
+.tabs input.tab-selector-2:checked ~ .content .content-2{
+	bottom: 0px;
+    z-index: 100;
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    filter: alpha(opacity=100);
+    opacity: 1;
+    -webkit-transition: all ease-out 0.2s 0.2s;
+    -moz-transition: all ease-out 0.2s 0.2s;
+    -o-transition: all ease-out 0.2s 0.2s;
+    -ms-transition: all ease-out 0.2s 0.2s;
+    transition: all ease-out 0.2s 0.2s;
+}
+
+
+.tabs input.tab-selector-3:checked ~ .content .content-3,
+.tabs input.tab-selector-4:checked ~ .content .content-4,
+.tabs input.tab-selector-5:checked ~ .content .content-5,
+.tabs input.tab-selector-6:checked ~ .content .content-6 {
+	bottom: 0px;
+    z-index: 100;
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    filter: alpha(opacity=100);
+    opacity: 1;
+    -webkit-transition: all ease-out 0.2s 0.2s;
+    -moz-transition: all ease-out 0.2s 0.2s;
+    -o-transition: all ease-out 0.2s 0.2s;
+    -ms-transition: all ease-out 0.2s 0.2s;
+    transition: all ease-out 0.2s 0.2s;
+}
+
+
+.content div h2,
+.content div h3{
+	color: #383848;
+}
+.content div p {
+	font-size: 14px;
+	line-height: 22px;
+	font-style: italic;
+	text-align: left;
+	margin: 0;
+	color: #333;
+	padding-left: 15px;
+	font-family: arial;
+	border-left: 8px solid rgba(193,193,234, 0.5);
+}
+.content ul li{
+	font-size: 14px;
+	line-height: 22px;
+	font-style: italic;
+	text-align: left;
+	margin: 0;
+	color: #333;
+	padding-left: 15px;
+	font-family: arial;
+	list-style:decimal;
+}
+*/
+
+
+
+#tabs {
+  overflow: hidden;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+#tabs li {
+  float: left;
+  margin: 0 .5em 0 0;
+}
+
+#tabs a {
+  position: relative;
+  /*background: #ddd;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#ddd));
+  background-image: -webkit-linear-gradient(top, #fff, #ddd);
+  background-image: -moz-linear-gradient(top, #fff, #ddd);
+  background-image: -ms-linear-gradient(top, #fff, #ddd);
+  background-image: -o-linear-gradient(top, #fff, #ddd);
+  background-image: linear-gradient(to bottom, #fff, #ddd);  */
+  
+  background: #7fbfff;
+	background: -moz-linear-gradient(top, #7fbfff 0%, #72abe5 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#7fbfff), color-stop(100%,#72abe5));
+	background: -webkit-linear-gradient(top, #7fbfff 0%,#72abe5 100%);
+	background: -o-linear-gradient(top, #7fbfff 0%,#72abe5 100%);
+	background: -ms-linear-gradient(top, #7fbfff 0%,#72abe5 100%);
+	background: linear-gradient(top, #7fbfff 0%,#72abe5 100%);
+	color: #3f5f80;
+	font-weight: bold;
+	text-align: center;
+	text-shadow: 1px 1px 1px rgba(255,255,255,0.3);
+  /**/
+  
+  padding: .7em 2.5em;
+  float: left;
+  text-decoration: none;
+/*  color: #444;
+  text-shadow: 0 1px 0 rgba(255,255,255,.8);*/
+  -webkit-border-radius: 5px 0 0 0;
+  -moz-border-radius: 5px 0 0 0;
+  border-radius: 5px 0 0 0;
+  -moz-box-shadow: 0 2px 2px rgba(0,0,0,.4);
+  -webkit-box-shadow: 0 2px 2px rgba(0,0,0,.4);
+  box-shadow: 0 2px 2px rgba(0,0,0,.4);
+}
+
+#tabs a:hover,
+#tabs a:hover::after,
+#tabs a:focus,
+#tabs a:focus::after {
+  background: #7fbfff;
+}
+
+#tabs a:focus {
+  outline: 0;
+}
+
+#tabs a::after {
+  content:'';
+  position:absolute;
+  z-index: 1;
+  top: 0;
+  right: -.5em;  
+  bottom: 0;
+  width: 1em;
+ /* background: #ddd;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#ddd));
+  background-image: -webkit-linear-gradient(top, #fff, #ddd);
+  background-image: -moz-linear-gradient(top, #fff, #ddd);
+  background-image: -ms-linear-gradient(top, #fff, #ddd);
+  background-image: -o-linear-gradient(top, #fff, #ddd);
+  background-image: linear-gradient(to bottom, #fff, #ddd);  */
+  
+  background: #7fbfff;
+	background: -moz-linear-gradient(top, #7fbfff 0%, #72abe5 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#7fbfff), color-stop(100%,#72abe5));
+	background: -webkit-linear-gradient(top, #7fbfff 0%,#72abe5 100%);
+	background: -o-linear-gradient(top, #7fbfff 0%,#72abe5 100%);
+	background: -ms-linear-gradient(top, #7fbfff 0%,#72abe5 100%);
+	background: linear-gradient(top, #7fbfff 0%,#72abe5 100%);
+	/**/
+  -moz-box-shadow: 2px 2px 2px rgba(0,0,0,.4);
+  -webkit-box-shadow: 2px 2px 2px rgba(0,0,0,.4);
+  box-shadow: 2px 2px 2px rgba(0,0,0,.4);
+  -webkit-transform: skew(10deg);
+  -moz-transform: skew(10deg);
+  -ms-transform: skew(10deg);
+  -o-transform: skew(10deg);
+  transform: skew(10deg);
+  -webkit-border-radius: 0 5px 0 0;
+  -moz-border-radius: 0 5px 0 0;
+  border-radius: 0 5px 0 0;  
+}
+
+#tabs #current a {
+  background: #e5f2ff;
+  z-index: 3;
+}
+
+#tabs #current a::after {
+  background: #e5f2ff;
+  z-index: 3;
+}
+#content {
+    background: #e5f2ff;
+    padding: 2em;
+    height: auto;
+	width: 90%;
+    position: relative;
+    z-index: 2;	
+    -moz-border-radius: 0 5px 5px 5px;
+    -webkit-border-radius: 0 5px 5px 5px;
+    border-radius: 0 5px 5px 5px;
+    -moz-box-shadow: 0 -2px 3px -2px rgba(0, 0, 0, .5);
+    -webkit-box-shadow: 0 -2px 3px -2px rgba(0, 0, 0, .5);
+    box-shadow: 0 -2px 3px -2px rgba(0, 0, 0, .5);
+	/**/
+	-webkit-transition: all linear 0.1s;
+    -moz-transition: all linear 0.1s;
+    -o-transition: all linear 0.1s;
+    -ms-transition: all linear 0.1s;
+    transition: all linear 0.1s;
+}
+
+.contentstyle div h2{
+	color: #383848;
+	font-size:20px;
+}
+.contentstyle div h3{
+	padding:0;
+	color: #383848;
+	text-decoration:underline;
+	font-size:16px;
+}
+.contentstyle div p{
+	font-size: 14px;
+	line-height: 22px;
+	font-style: italic;
+	text-align: left;
+	margin: 0;
+	color: #333;
+	padding-left: 15px;
+	font-family: arial;
+	border-left: 8px solid rgba(193,193,234, 0.5);
+}
+.contentstyle table{
+	font-size: 14px;
+	line-height: 22px;
+	font-style: italic;
+	text-align: left;
+	margin: 0;
+	color: #333;
+	font-family: arial;
+}
+.contentstyle ul li,dd{
+	font-size: 14px;
+	line-height: 22px;
+	font-style: italic;
+	text-align: left;
+	margin: 0;
+	color: #333;
+	padding-left: 15px;
+	font-family: arial;
+	list-style:decimal;
+}
+.contentstyle a{
+	font-size: 14px;
+	line-height: 22px;
+	font-style: italic;
+	text-align: left;
+	margin: 0;
+	color: #333;
+	padding: 0 5px;
+	font-family: arial;
+	list-style:decimal;
+}
+.contentstyle img{
+	width:180px;
+	-webkit-border-bottom-left-radius:13px;
+	-moz-border-radius-bottomleft:13px;
+	border-bottom-left-radius:13px;
+	-webkit-border-top-right-radis:13px;
+	-moz-border-radius-topright:13px;
+	border-top-right-radius:13px;
+}
+
+</style>
+
+</head>
+
+<body>
+<div id="page-wrap">
+	<script type="text/javascript" src="engine1/global.js"></script>
+  <p class="pagetitle">Services</p>
+  <!--<span style="font-size: 16px;font-weight: normal;"><a class="bodylink" href="index.html">Home</a> > Facility/Services</span><br/>-->
+  <hr/>
+<ul id="tabs">
+    <li><a href="#" name="tab1">Animal Phenotyping</a></li>
+    <li><a href="#" name="tab2">In-vitro Analytical & Assay</a></li>
+    <li><a href="#" name="tab3">Proteomics</a></li>
+    <li><a href="#" name="tab4">Transgenic &amp; Knockout Mice</a></li>
+ 
+</ul>
+<div class="contentstyle">
+<div id="content"> 
+    <div id="tab1">
+   <!-- <p>Our laboratories are located at the Laboratory Block (2/F and 8/F) and the Hong Kong Jockey Club Building for Interdisciplinary Research (7/F) of Li Ka Shing Faculty of Medicine. The laboratories are equipped with state-of-art facilities sufficient to support all basic, clinical and translational research by our team members and collaborators. We provide in-house facilities and technique platforms which are directly relevant to this SKLPB are listed below:
+<a href="#content-1">Animal Phenotyping Services</a>|<a href="#content-2">In-vitro Analytical &amp; Assay Services</a>|<a href="#content-3">Proteomics Services</a><br/><br/><br/>
+ <h2><a name="content-1"></a>Animal Phenotyping Services</h2>-->
+ <table>
+        <tr><td colspan="2"><h3>Comprehensive Lab Animal Monitoring System CLAMS (Columbus Instrument)</h3></td></tr>
+        
+        <tr>
+        <td><img src="img/service_clams.png" /></td>
+        <td>
+        <ul>
+<li>Oxygen consumption and carbon dioxide production.</li>
+<li>Respiratory exchange ratio&colon; Selective substrate oxidation (carbohydrates/lipids).</li>
+<li>Home Cage Activity&colon; Monitoring and interpreting 3D (X,Y and Z dimension) activity.</li>
+<li>Food & drink consumption&colon; 24-hours monitoring.</li>
+<li>Core body temperature&colon; Telemetry monitoring.</li>
+<li>Temperature control ( 4&deg;C-37&deg;C).</li>
+<li>Ten mice are monitored simultaneously.</li>
+</ul></td>
+</tr>
+<tr><td align="center"><a href="http://goo.gl/OE8VNa" target='new'><!--Online Booking</a>--></td><td><p>All enquiries are welcome to Shawn Liu (shawnhz@hku.hk)</p></td></tr>
+        
+        <tr><td colspan="2"><h3>The Minispec LF90 Body Composition Analyzer (Bruker)</h3></td></tr>
+        
+        <tr>
+        <td><img src="img/service_minispec.png" /></td>
+        <td>
+        <ul>
+			<font color=#FF0004>Temporary Suspended for Annual Maintenance</font>
+<li>Non-invasive measurement of lean tissue, fat, and fluid in live rodent models.</li>
+<li>Rapid analysis&colon; less than 2 minutes and no sample preparation.</li>
+<li>Stress-free measurements.</li>
+<li>For both mice and rats (up to 800 gram).</li>
+<li>Allows frequent testing because of negligible risk to animal health.</li>
+<li>Longitudinal studies become possible.</li>
+</ul></td>
+</tr>
+<tr><td align="center"><a href="http://goo.gl/OE8VNa" target='new'><!--Online Booking</a>--></td><td><p>All enquiries are welcome to Shawn Liu (shawnhz@hku.hk)</p></td></tr>
+
+<tr><td colspan="2"><h3>Wire Myography for Isometric Tension Recording (Danish Myo Technology DMT)</h3></td></tr>
+        
+        <tr>
+        <td><img src="img/service_wiremyo.png" /></td>
+        <td>
+        <ul>
+<li>Measurement of isometric tension in isolated arterial rings ex vivo under physiological conditions (37 &deg;C, pH 7.4) as an approximation for vascular function in vivo.</li>
+<li>High sensitivity for determinations e.g. in mouse aorta, carotid, mesenteric and renal arteries.</li>
+<li>Evaluation of endothelial dysfunction in murine disease models and transgenic animals.</li>
+<li>Four rings can be examined in parallel per system.</li>
+<li>More than twelve hours viability of the preparations allowing sequential concentration-response curves to pharmacological and physiological substances.</li>
+<li>Digital recording for data analysis on personal computer using LabChart® software.</li>
+
+</ul></td>
+</tr>
+<tr><td align="center"><a href="http://goo.gl/OE8VNa" target='new'>Online Booking</a></td><td><p>All enquiries are welcome to Leigang Jin (zjjinleigang@163.com)</p></td></tr>
+
+<tr><td colspan="2"><h3>BP-2000 Blood Pressure Analysis System (Visitech Systems)</h3></td></tr>
+        
+        <tr>
+        <td><img src="img/service_bp.png" /></td>
+        <td>
+        <ul>
+<li>Non-invasive determination of blood pressure and pulse rate in unanesthetized mice.</li>
+<li>Tail-cuff system having high correlation with invasive measurements in unrestrained animals.</li>
+<li>Approximately 30 minutes recording per set.</li>
+<li>Four mice can be examined in parallel (platform for rats also available).</li>
+<li>Screening of transgenic animals for changes in blood pressure, continuous monitoring.</li>
+<li>Digitally recorded raw data exportable to Excel®.</li>
+</ul></td>
+</tr>
+<tr><td align="center"><a href="http://goo.gl/OE8VNa" target='new'>Online Booking</a></td><td><p>All enquiries are welcome to Leigang Jin (zjjinleigang@163.com)</p></td></tr>
+<tr><td colspan="2"><h3>Animal Treadmill (Columbus Instrument) for exercise study</h3></td></tr>
+        
+        <tr>
+        <td><img src="img/service_exercise.png" /></td>
+        <td>
+        <ul>
+<li>3 individual lanes for rats&semi; 6 individual lanes for mice.</li>
+<li>Single belt construction.</li>
+<li>Unique wide range of speed adjustable from 3 to 100 meters per minute.</li>
+<li>Adjustable acceleration in 0.1 meter/minute-steps per second.</li>
+<li>Digital display of distance traveled, time and counts touch on electrical stimulus.</li>
+<li>Adjustable inclination&colon; 0-25&deg;.</li>
+<li>Electrical stimulus with individual on/off switches per lane.</li>
+<li>Belt texture facilitates animal grip.</li>
+</ul></td>
+</tr>
+<tr><td align="center"><a href="http://goo.gl/OE8VNa" target='new'>Online Booking</a></td><td><p>All enquiries are welcome to Max Wang (yaowang@hku.hk)</p></td></tr>
+
+<tr><td colspan="2"><h3>Stereotaxic instrument (Stoelting) and micro injector (Harvard) for brain study</h3></td></tr>
+        
+        <tr>
+        <td><img src="img/service_brain1.png" /><br /><img src="img/service_brain2.png" /></td>
+        <td>
+        <ul>
+<li>Ear and tooth bar post height adjustment to accommodate animals between 10-75g.</li>
+<li>Triple lead screw in manipulator arm for fast positioning.</li>
+<li>Accurate to 100 microns (Non-Digital), 10 microns (Digital Only) or 1 micron (Motorized Only).</li>
+<li>Compatible to various syringes.</li>
+<li>Minimal injection volume&colon; 0.01ml.</li>
+<li>LCD display injection volume and flow rate.</li>
+
+</ul></td>
+</tr>
+<tr><td align="center"><a href="http://goo.gl/OE8VNa" target='new'>Online Booking</a></td><td><p>All enquiries are welcome to Baile Wang (blwong@hku.hk)</p></td></tr>
+
+<tr><td colspan="2"><h3>Small Animal Intensive Care Unit (Harvard Apparatus)</h3></td></tr>
+        
+        <tr>
+        <td><img src="img/service_icu.png" /></td>
+        <td>
+        <ul>
+<li>Provide thermoneutral environment (30 &deg;C) for mice to avoid thermostress and thus determine the thermogenic capacity at a basal level.</li>
+<li>Speed recovery for mice after surgery.</li>
+<li>Fluid heating method could eliminate hot spots and ensure sustainable temperatures.</li>
+</ul></td>
+</tr>
+<tr><td align="center"><a href="http://goo.gl/OE8VNa" target='new'>Online Booking</a></td><td><p>All enquiries are welcome to Lai Yee Cheong (u3003285@hku.hk)
+</p></td></tr>
+
+<tr><td colspan="2"><h3>Hyperinsulinemic-euglycemic Clamp</h3></td></tr>
+        
+        <tr>
+        <td><img src="img/service_clamp.png" /></td>
+        <td>
+        <ul>
+<li>Gold standard for assessing insulin action in vivo.</li>
+<li>Hyperinsulinemia is achieved by a constant insulin infusion.</li>
+<li>Euglycemia is maintained via a concomitant glucose infusion at a variable rate.</li>
+<li>Isotopic 2[<sup>14</sup>C] deoxyglucose allows to assess tissue-specific glucose uptake</li>
+<li>[3-<sup>3</sup>H] glucose allows to assess glucose production and disposal.</li>
+
+</ul></td>
+</tr>
+<tr><td align="center"><a href="http://goo.gl/OE8VNa" target='new'>Online Booking</a></td><td><p>All enquiries are welcome to Baile Wang (blwong@hku.hk)</p></td></tr>
+
+<tr><td colspan="2"><h3>Implantable Telemetry System(Data Sciences International)</h3></td></tr>
+<tr>
+        <td><img src="img/service_its.png" /></td>
+        <td>
+        <ul>
+<li>Blood pressure measured via carotid artery.</li>
+<li>Biopotential signals such as ECG, EMG, EEG or EOG.</li>
+<li>Core body temperature.</li>
+<li>Locomotor activity.</li>
+<li>Direct measurements free from the effects of anesthesia and stress.</li>
+<li>Long term monitoring with or without pharmacological treatments.</li>
+
+
+</ul></td>
+</tr>
+<tr><td align="center"><a href="http://goo.gl/OE8VNa" target='new'>Online Booking</a></td><td><p>All enquiries are welcome to Debbie Deng (hbdeng1@hku.hk) at 39179257</p></td></tr>
+
+<tr><td colspan="2"><h3>Vevo&reg; 2100 System</h3></td></tr>
+<tr>
+        <td><img src="img/service_vevo.png" /></td>
+        <td>
+        <ul>
+        <li>Superior resolution and image uniformity through entire field of view.</li>
+<li>30 micron resolution.</li>
+<li>Frame rates in 2D up to 740 fps (for a 4x4 mm field of view).</li>
+
+</ul></td>
+</tr>
+<tr><td align="center"><a href="http://goo.gl/OE8VNa" target='new'>Online Booking</a></td><td><p>All enquiries are welcome to Connie Woo (cwhwoo@hku.hk)</p></td></tr>
+    </table>
+    </div>
+<div id="tab2">
+    <table>
+<tr><td colspan="2"><h3>XF Extracellular Flux Analyzers (Seahorse)</h3></td></tr>
+        
+        <tr>
+        <td><img src="img/service_xf.png" /></td>
+        <td>
+        <ul>
+<li>In vitro measurement of oxygen consumption, glycolysis, carbon dioxide, mitochondrial function, and fatty acid oxidation.</li>
+<li>Effect of oxidative stress on mitochondrial functions.</li>
+<li>Test the capacity of cells to maintain ATP level upon treatment with mitochondrial respiration inhibitor or glycolytic inhibitor.</li>
+</ul></td>
+</tr>
+<tr><td align="center"><a href="http://goo.gl/OE8VNa" target='new'>Online Booking</a></td><td><p>All enquiries are welcome to Hannah Hui (hannahui@hku.hk)</p></td></tr>
+
+<tr><td colspan="2"><h3>BS120 Automatic Biochemical Analyzer (Mindray)</h3></td></tr>
+        
+        <tr>
+        <td><img src="img/service_bs120.png" /></td>
+        <td>
+        <p>A bench-top analyzer for clinical biochemical analysis and biochemical reagents development.</p>
+        <ul>
+<li>Automatic dilution system.</li>
+<li>37 &deg;C incubation.</li>
+<li>Test speed: 100 test/hour.</li>
+<li>8 different wavelengths.</li>
+<li>Minimum reaction volume: 180 μl.</li>
+</ul></td>
+</tr>
+<tr><td align="center"><a href="http://goo.gl/OE8VNa" target='new'>Online Booking</a></td><td><p>All enquiries are welcome to Pengcheng Zhou (zhoupc@hku.hk) at 28315525</p></td></tr>
+
+<tr><td colspan="2"><h3>Synergy H1 Hybrid Microplate Reader (BioTek)</h3></td></tr>
+        
+        <tr>
+        <td><img src="img/service_microplate.png" /></td>
+        <td>
+        <ul>
+<li>Excellent plate reader: reliable, fast, good sensitivity.</li>
+<li>Monochromator absorbance.</li>
+<li>Full-light luminescence.</li>
+<li>Fluorescence polarization.</li>
+<li>Time resolved fluorescence.</li>
+
+</ul></td>
+</tr>
+<tr><td align="center"><a href="http://goo.gl/OE8VNa" target='new'>Online Booking</a></td><td><p>All enquiries are welcome to Pengcheng Zhou (zhoupc@hku.hk) at 28315525</p></td></tr>
+
+<tr><td colspan="2"><h3>Anaerobic Chamber (DWS DG250)</h3></td></tr>
+        
+        <tr>
+        <td><img src="img/service_anaerobic.png" /></td>
+        <td>
+        <ul>
+<li>The workstation is used to process, culture and examine anaerobic samples without exposure to atmospheric oxygen.</li>
+<li>The workstation can accommodate 270 x 90mm Petri dishes.</li>
+<li>Temperature control: 5&deg;C-45&deg;C.</li> 
+<li>The user portholes act as two mini-airlocks so the users can transfer plates at the same time as entering/exiting the workstation.</li> 
+<li>The workstation is available with automatic sleeve gassing system operated by foot-switch so the users can ensure the correct conditions and use gas supplies efficiently.</li>
+<li>Gas supplies&colon; 100% N<sub>2</sub> and mix gas (10% H<sub>2</sub> 10% CO<sub>2</sub> 80% N<sub>2</sub>).</li>
+
+</ul></td>
+</tr>
+<tr><td align="center"><a href="http://goo.gl/OE8VNa" target='new'>Online Booking</a></td><td><p>All enquiries are welcome to Jin Li (jinli@hku.hk) at 39179763</p></td></tr>
+
+<tr><td colspan="2"><h3>Gas Chromatography–Mass Spectrometry (TRACE 1300/ISQ Single Quadrupole)</h3></td></tr>
+        
+        <tr>
+        <td><img src="img/service_gc.png" /></td>
+        <td>
+        <ul>
+<li>Separating different components of a mixture that can be vaporized without decomposition (environmental science, industrial chemicals and life science).</li>
+<li>Full Scan/SIM simultaneous within sample injection for confirmation and improved quantitation in the same analysis.</li>
+<li>AutoSIM for quick and automated method development.</li>
+<li>Inert ion source and sample flow path for highest chromatographic integrity.</li>
+<li>Quick column change is enabled without venting the mass spectrometer.</li>
+
+
+</ul></td>
+</tr>
+<tr><td align="center"><a href="http://goo.gl/OE8VNa" target='new'>Online Booking</a></td><td><p>All enquiries are welcome to Pengcheng Fan (pcfan@hku.hk) at 39179257</p></td></tr>
+
+<tr><td colspan="2"><h3>High-pressure Liquid Chromatography(Agilent 1100 series)</h3></td></tr>
+        
+        <tr>
+        <td><img src="img/service_hplc.png" /></td>
+        <td>
+        <ul>
+<li>Rapid separation the components of a mixture from various biological samples.</li>
+<li>Pumps with flow control are available for automatic gradient delivery.</li>
+<li>Autosampler is ready for rapid, accurate, and precise injections.</li>
+<li>Ultraviolet (UV) detector allows the measurement of sample to absorb light at different wavelengths.</li>
+<li>Provides high-sensitivity fluorescence detection with wavelength range up to 900 nm without sacrificing sensitivity.</li>
+</ul></td>
+</tr>
+<tr><td align="center"><a href="http://goo.gl/OE8VNa" target='new'>Online Booking</a></td><td><p>All enquiries are welcome to Pengcheng Fan (pcfan@hku.hk) at 39179257</p></td></tr>
+
+<tr><td colspan="2"><h3>Yeast Two-hybrid (Y2H) Screening</h3></td></tr>
+        
+        <tr>
+        <td colspan="2">
+        <p>Yeast two-hybrid (Y2H) screening is a mature technique to discover novel protein interactions and maps the precise binding regions between two proteins. Our service includes&colon;</p>
+        <p><img style="width:400px;" src="img/service_y2h.png" /></p>
+        <ul>
+<li>Cloning: Subclone gene of interest  into Y2H vector and transform into yeast.</li>
+<li>Testing for “bait” auto-activation.</li>
+<li>Screening:</li>
+<dd>- Perform large scale (pre-made or custom-made) library screen.</dd>
+<dd>- Phenotypic analysis (up to 4 reporter genes are used).</dd>
+<dd>- Recover plasmids from yeast and transform  into E.coli.</dd>
+<dd>- Determine identity of “prey” by sequencing.</dd>
+<li>Validation: Retransform yeast with recovered plasmids to verify interactions.</li>
+
+</ul></td>
+</tr>
+<tr><td align="center"><a href="http://goo.gl/OE8VNa" target='new'>Online Booking</a></td><td><p>All enquiries are welcome to Jimmy Lee (jimmylee@hku.hk) at 39179763</p></td></tr>
+
+<tr><td colspan="2"><h3>Viral Services</h3></td></tr>
+        
+        <tr>
+        <td colspan="2">
+        <p>We offer a broad range of viral expression system (Adenovirus, Lentivirus and Adeno-associated virus) for gene delivery.</p>
+        <p><img style="width:600px;" src="img/service_virus.png" /></p>
+        <ul>
+        <li>Subcloning your gene of interest into related vector.</li>
+<li>Large-scale preparation of virus.</li>
+<li>Determination of the viral titer.</li>
+<li>Technical Support.</li>
+</ul></td>
+</tr>
+<tr><td align="center"><a href="http://goo.gl/OE8VNa" target='new'>Online Booking</a></td><td><p>All enquiries are welcome to Huang Zhe (huangzhe@hku.hk) at 39179763</p></td></tr>
+
+
+    </table>
+    
+    </div>
+    <div id="tab3">
+    <table>
+<tr><td colspan="2"><h3>&Auml;KTA Explorer&trade; with Fraction Collector Frac-950</h3></td></tr>
+        
+        <tr>
+        <td><img src="img/service_akta.png" /></td>
+        <td>
+        <p>&Auml;KTAexplorer&trade; chromotography systems are designed for fast development and optimization of any biomolecular purification, using one working platform for all techniques and samples. The method wizard and optimized system configurations, allow rapid media screening, method scouting, method optimization, and scale-up experiments</p>
+        <ul>
+        <li>Fast, simple start to every purification.</li>
+<li>Simple column selection suited to each purification.</li>
+<li>Fast, systematic method optimization.</li>
+<li>No manual titration of buffers.</li>
+<li>Flexibility from laboratory to production.</li>
+</ul></td>
+</tr>
+<tr><td align="center"><a href="http://goo.gl/OE8VNa" target='new'>Online Booking</a></td><td><p>All enquiries are welcome to Pengcheng Zhou (zhoupc@hku.hk) at 28315525</p></td></tr>
+
+<tr><td colspan="2"><h3>RALF Autoclavable Benchtop Bioreactor BiOENGiNEERiNG (Switzerland)</h3></td></tr>
+        
+        <tr>
+        <td><img src="img/service_ralf.png" /></td>
+        <td>
+        <ul>
+        <li>Bioengineering RALF for Cell Culture or Microbial Fermentation.</li>
+<li>Rounded-bottom autoclavable laboratory fermentor/bioreactor.</li>
+<li>Unlimited options for pumps and gas lines.</li>
+<li>Can do cell and microbial culture in the same reactor due to free configuration of gas lines.</li>
+<li>Comes with the most comprehensive bioprocess management software: BioSCADA Ralf includes complete process automation, recipe features, audit trail, access level management, batch reporting, and various other advanced features.</li>
+<li>Free I/O modules for external devices such as exhalyzers, VOC, probes, etc.</li></ul></td>
+</tr>
+<tr><td align="center"><a href="http://goo.gl/OE8VNa" target='new'>Online Booking</a></td><td><p>All enquiries are welcome to Pengcheng Zhou (zhoupc@hku.hk) at 28315525</p></td></tr>
+
+<tr><td colspan="2"><h3>Non-contacting Protein Dispenser</h3></td></tr>
+        
+        <tr>
+        <td><img src="img/service_biodot.png" /></td>
+        <td>
+        <ul>
+        <li>Allow to dispense samples in a non-contacting manner.</li>
+<li>Allow to dispense samples quantitatively in a &ldquo;Step-and-Repeat&rdquo; mode with a dispensing volume from 1.3 nL- 2 &mu;L as a single drop.</li>
+<li>Multi-mode dispensing in terms of dot dispensing and line dispensing with automatic wash,  aspiration and dispense.</li>
+<li>Suitable for applications including Lateral Flow, Immunoblot, and Flow Through.</li>
+</ul></td>
+</tr>
+<tr><td align="center"><a href="http://goo.gl/OE8VNa" target='new'>Online Booking</a></td><td><p>All enquiries are welcome to Pengcheng Zhou (zhoupc@hku.hk) at 28315525</p></td></tr>
+
+    </table>
+    </div>
+    
+    <div id="tab4">
+    <table border="1" bordercolor="#CCCCCC">
+    <tr><td width="20%"><h3>Strain</h3></td><td width="20%"><h3>Name</h3></td><td width="10%"><h3>Genotype</h3></td><td><h3>Description</h3></td></tr>
+    <tr><td><b>B6.Cg-Tg(Fabp4-cre)1Rev/J</b><br />
+    </td>
+    <td>Adipocyte and macrophage cre</td>
+    <td>Fabp4-Cre</td>
+    <td>Transgenic mice expressing Cre recombinase driven by mouse Fabp4 promoter. These FABP4-Cre transgenic mice are a Cre-lox tool useful for deletion of floxed sequences in brown, white adipose tissue and macrophages.<br />
+    <u>Application</u><br />
+    For generation of adipocyte- or macrophage- specific knockout mice <a href="http://jaxmice.jax.org/strain/005069.html" target='new'>(...Further Info)</a></td>
+    </tr>
+    
+    <tr><td><b>B6;FVB-Tg(Adipoq-cre)1Evdr/J</b><br />
+    </td>
+    <td>Adiponectin-Cre</td>
+    <td>Adipoq-Cre</td>
+    <td>Transgenic mice expressing Cre recombinase driven by the mouse adiponectin (Adipoq) promoter/enhancer regions. Adipoq-Cre BAC transgenic mice are a Cre-lox tool for deletion of floxed sequences in white adipose tissue and brown adipose tissue, but not in activated or resident macrophages.<br />
+    <u>Application</u><br />For generation of adipocyte specific knockout mouse model <a href="http://jaxmice.jax.org/strain/010803.html" target='new'>(...Further Info)</a></td>
+    </tr>
+    
+    <tr><td><b>B6.Cg-Apoe<sup>tm1Unc</sup> (D12Mit182-D12Mit2)/Pgn</b><br /><br />
+    <img src="img/service_apoeko.png" />
+    </td>
+    <td>ApoE-KO</td>
+    <td>ApoE-/-</td>
+    <td>Mouse with targeted knockout of apolipoprotein gene.<br />
+    <u>Application</u><br />Disease model for atherosclerosis and hypercholesterolemia <a href="http://jaxmice.jax.org/strain/007224.html" target='new'>(...Further Info)</a></td>
+    </tr>
+
+    
+    <tr><td><b>B6.Cg-Dock7<sup>m</sup> Lepr<sup>db</sup>/+ +/J</b><br /><br />
+    <img src="img/service_dbdb.png" /><br />
+    </td>
+    <td>db/db mice</td>
+    <td></td>
+    <td>Mice with spontanonous mutation at leptin receptor gene.<br />
+    <u>Application</u><br />Disease model for obesity and type 2 diabetes <a href="http://jaxmice.jax.org/strain/000699.html" target='new'>(...Further Info)</a></td>
+    </tr>
+    
+    <tr><td><b>FVB-Tg(Tek-cre)2352Rwng/J</b>
+    </td>
+    <td>Endothelium Cre</td>
+    <td>Tie2-Cre</td>
+    <td>Transgenic mice expressing the Cre recombinase driven by mouse Tek, endothelial-specific receptor tyrosine kinase (also known asTie2), promoter.<br />
+    <u>Application</u><br />Generation of endothelium specific knockout mice <a href="http://jaxmice.jax.org/strain/008537.html" target='new'>(...Further Info)</a></td>
+    </tr>
+    
+    <tr><td><b>B6.Cg-Tg(Alb-cre)21Mgn/J</b>
+    </td>
+    <td>Liver Cre</td>
+    <td>Alb-Cre</td>
+    <td>
+    <u>Application</u><br />For generation of hepatocyte specific knockout mice <a href="http://cre.jax.org/Alb/AlbNano.html" target='new'>(...Further Info)</a></td>
+    </tr>
+    <tr><td><b>B6.129P2-Lyz2<sup>tm1(cre)Ifo</sup>/J</b>
+    </td>
+    <td>Macrophage Cre</td>
+    <td>Lys-Cre</td>
+    <td>Mice have a Cre recombinase inserted into the lysozyme 2 gene.<br />
+    <u>Application</u><br />For generation of the myeloid cell lineage specific knockout mice <a href="http://jaxmice.jax.org/strain/004781.html" target='new'>(...Further Info)</a></td>
+    </tr>
+    <tr><td><b>STOCK Mir34a<sup>tm1.2Aven</sup>/J</b></td>
+    <td>Microrna-34 mice</td>
+    <td>micro34-/-</td>
+    <td>miR-34a<sup>fl/fl</sup> mice possess loxP sites flanking the entire microRNA 34a (miR-34a) sequence <a href="http://jaxmice.jax.org/strain/018545.html" target='new'>(...Further Info)</a></td>
+    </tr>
+    <tr><td><b>B6.FVB(129S4)-Tg(Ckmm-cre)5Khn/J</b>
+    </td>
+    <td>Muscle Cre mice</td>
+    <td>Ckmm-cre</td>
+    <td>Transgenic mice expressing  Cre recombinase driven by the muscle creatine kinase (MCK or Ckm) promoter.<br />
+    <u>Application</u><br />For generation of muscle specific knockout mice <a href="http://jaxmice.jax.org/strain/006475.html" target='new'>(...Further Info)</a></td>
+    </tr>
+    <tr><td><b>NOD/ShiLtJ</b><br /><img src="img/service_nod.png" />
+    </td>
+    <td>NOD mice</td>
+    <td>NOD</td>
+    <td>Disease model for type 1 diabetes. Diabetes in NOD/ShiLtJ mice is characterized by insulitis, a leukocytic infiltration of the pancreatic islets <a href="http://jaxmice.jax.org/strain/001976.html" target='new'>(...Further Info)</a></td>
+    </tr>
+    </tr>
+    <tr><td><b>B6.129P2-Trp53<sup>tm1Brn</sup>/J (p53-fl)</b></td>
+    <td>p53-fl</td>
+    <td>p53fl/fl</td>
+    <td>When these p53<sup>flox</sup> mice are bred to mice with a Cre recombinase gene under the control of a promoter of interest, Trp53 expression is deleted in the tissue of interest. Exons 2-10 are flanked by loxP sites in this conditional targeted mutation. Mice homozygous for the floxed allele do not show any increase in disease incidence for at least a year. When bred to mice with a cre recombinase gene under the control of a promoter of interest, expression is deleted in the tissue of interest <a href="http://jaxmice.jax.org/strain/002052.html" target='new'>(...Further Info)</a></td>
+    </tr>
+    <tr><td><b>B6.Cg-Tg(Ins2-cre)25Mgn/J</b>
+    </td>
+    <td>beta-cell Cre</td>
+    <td>Ins-Cre</td>
+    <td>Transgenic mice express Cre recombinanse driven by rat insulin II promoter.<br />
+    <u>Application</u><br />For generation of pancreatic beta cell specific knockout mice <a href="http://jaxmice.jax.org/strain/003573.html
+" target='new'>(...Further Info)</a></td>
+    </tr>
+    <tr><td><b>B6;129S4-Ppara<sup>tm1Gonz</sup>/J</b>
+    </td>
+    <td>PPARα-KO mice</td>
+    <td>PPARα-/-</td>
+    <td>Mice with targeted mutation at PPARα gene.<br />
+    <u>Application</u><br />Mouse model for studying lipid metabolism, cell proliferation, diabetes, obesity, and wound healing <a href="http://jaxmice.jax.org/strain/008154.html" target='new'>(...Further Info)</a></td>
+    </tr>
+    <tr><td><b>B6;129-Sirt1<sup>tm1Ygu</sup>/J</b>
+    </td>
+    <td>Sirt1-fl mice</td>
+    <td>Sirt1fl/fl</td>
+    <td>Mice with A loxP-flanked neomycin cassette just upstream of exon 4 and a third loxP site downstream of exon 4 were inserted to create this targeted mutant Sirt1 allele.<br />
+    <u>Application</u><br />Disease models for studying mammary gland development, mammary cancer, apoptosis, and metabolic diseases
+<a href="http://jaxmice.jax.org/strain/008041.html" target='new'>(...Further Info)</a></td>
+    </tr>
+    <tr><td><b>B6;129S4-Tet1<sup>tm1.1Jae</sup>/J</b></td>
+    <td>TET-1 mice</td>
+    <td>TET-Tg</td>
+    <td>Mice with targeted mutation at Tet1 gene.<br />
+    <u>Application</u><br />For studies of embryonic cell pluripotency and development
+<a href="http://jaxmice.jax.org/strain/017358.html" target='new'>(...Further Info)</a></td>
+    </tr>
+    <tr><td><b>STOCK Tg(TIE2GFP)287Sato/J</b><br /><img src="img/service_tie2gfp.png" /></td>
+    <td>Tie2-GFP</td>
+    <td>Tie2GFP</td>
+    <td>Mice expressing Green Fluorescent Protein (GFP) driven by endothelial-specific receptor tyrosine kinase (Tek, formerly, Tie2) promote.<br />
+    <u>Application</u><br />For study of vascular development
+<a href="http://jaxmice.jax.org/strain/006770.html" target='new'>(...Further Info)</a></td>
+    </tr>
+    <tr><td><b>C3H/HeJ</b></td>
+    <td>TLR4-KO</td>
+    <td>TLR4-/-</td>
+    <td>A spontaneous mutation occurred in C3H/HeJ at the lipopolysaccharide response locus.<br />
+    <u>Application</u><br />Mouse model for  immunology, inflammation and autoimmunity Research
+<a href="http://jaxmice.jax.org/strain/000659.html" target='new'>(...Further Info)</a></td>
+    </tr>
+    <tr><td><b>C57BL/6J-Ticam1<sup>Lps2</sup>/J</b></td>
+    <td>TIRF mice</td>
+    <td>Ticam1<sup>Lps2</sup>/Ticam1<sup>Lps2</sup></td>
+    <td>Chemically induced mutation at lipopolysaccharide 2 gene.<br />
+    <u>Application</u><br />Studies of immunodeficiency and host response to bacterial endotoxins and viruses
+<a href="http://jaxmice.jax.org/strain/005037.html" target='new'>(...Further Info)</a></td>
+    </tr>
+    </table>
+    
+    
+ <br /><p>All enquiries are welcome to Ruby Hoo (rubyhoo@hkucc.hku.hk) at 39179767</p>
+    </div>
+
+</div>
+</div>
+
+<!--<section class="tabs">
+    <input id="tab-1" type="radio" name="radio-set" class="tab-selector-1" checked="checked" />
+    <label for="tab-1" class="tab-label-1">Platforms</label>
+     
+    <input id="tab-2" type="radio" name="radio-set" class="tab-selector-2" />
+    <label for="tab-2" class="tab-label-2">Transgenic & Knockout Mice Facilities</label>
+
+    <input id="tab-3" type="radio" name="radio-set" class="tab-selector-3" />
+    <label for="tab-3" class="tab-label-3">Proteomics Facilities</label>
+    
+    <input id="tab-4" type="radio" name="radio-set" class="tab-selector-4" />
+    <label for="tab-4" class="tab-label-4">Transgenic/Knockout Mice Facilities</label>
+
+    
+    <input id="tab-5" type="radio" name="radio-set" class="tab-selector-5" />
+    <label for="tab-5" class="tab-label-5">Animal Phenotyping Facilities</label>
+    
+    <input id="tab-6" type="radio" name="radio-set" class="tab-selector-6" />
+    <label for="tab-6" class="tab-label-6">Biobanks for Biomarker Discovery &amp; Clinical Studies</label>
+    <div class="clear-shadow"></div>
+                 
+    <div class="content">
+    <div class="content-1" name="content-1">
+            <h2>Research Platforms</h2><p>
+             
+            Our laboratory, with a total physical area of >3000 m<sup>2</sup>, is located at the second and eighth floor of the laboratory block of Li Ka Shing Faculty of Medicine, which is equipped with state-of-art facilities sufficient to support all basic, clinical and translational research by our team members and collaborators. Our major in-house facilities and technique platforms which are directly relevant to this PSKL are listed below:
+           
+            <ul>
+            <li><a href="#content-2">In-vitro Analytical Core &amp; Assay Center</a></li>
+            <li><a href="#content-3">Proteomics Facilities</a></li>
+            <li><a href="#content-4">Transgenic/Knockout Mice Facilities</a></li>
+            <li><a href="#content-5">Animal Phenotyping Facilities</a></li>
+            <li><a href="#content-6">Biobanks for Biomarker Discovery &amp; Clinical Studies</a></li>
+            </ul></p>
+        </div>
+        <div class="content-2"><a name="content-2"></a>
+            <h2>In-vitro Analytical Core & Assay Center</h2><p>The <a href="http://www.antibody.hku.hk" target="new">Antibody and Immunoassay Services Center (AIS)</a> established by Prof. A. Xu is equipped with all the modern facilities for in vitro analysis of biological samples for both animals and humans, including:</p>
+            <ul>
+            <li>Bio-Rad Luminex MAP system for simultaneous measurement of up to 96 analyztes in a small volume of samples.</li>
+            <li>MO7LO Beckman Coulter cell sorter for flow cytometry, Bio-tek microplate readers and Microfill.</li>
+            <li>A Beckman Microplate luminometer for Chemiluminescence Immunoassays.</li>
+            <li>Fermenters and FPLC for protein and antibody production and purification.</li></ul><p>A large number of validated in-house assays will serve as an invaluable tool for both animal phenotyping analysis and clinical investigations.</p>
+        </div>
+
+        <div class="content-1" name="content-1">
+            <h2>Research Platforms</h2><p>
+             
+            Our laboratory, with a total physical area of >3000 m<sup>2</sup>, is located at the second and eighth floor of the laboratory block of Li Ka Shing Faculty of Medicine, which is equipped with state-of-art facilities sufficient to support all basic, clinical and translational research by our team members and collaborators. Our major in-house facilities and technique platforms which are directly relevant to this PSKL are listed below:
+           
+            <ul>
+            <li><a href="#content-2">In-vitro Analytical Core &amp; Assay Center</a></li>
+            <li><a href="#content-3">Proteomics Facilities</a></li>
+            <li><a href="#content-4">Transgenic/Knockout Mice Facilities</a></li>
+            <li><a href="#content-5">Animal Phenotyping Facilities</a></li>
+            <li><a href="#content-6">Biobanks for Biomarker Discovery &amp; Clinical Studies</a></li>
+            </ul></p>
+        </div>
+        <div class="content-2"><a name="content-2"></a>
+            <h2>In-vitro Analytical Core & Assay Center</h2><p>The <a href="http://www.antibody.hku.hk" target="new">Antibody and Immunoassay Services Center (AIS)</a> established by Prof. A. Xu is equipped with all the modern facilities for in vitro analysis of biological samples for both animals and humans, including:</p>
+            <ul>
+            <li>Bio-Rad Luminex MAP system for simultaneous measurement of up to 96 analyztes in a small volume of samples.</li>
+            <li>MO7LO Beckman Coulter cell sorter for flow cytometry, Bio-tek microplate readers and Microfill.</li>
+            <li>A Beckman Microplate luminometer for Chemiluminescence Immunoassays.</li>
+            <li>Fermenters and FPLC for protein and antibody production and purification.</li></ul><p>A large number of validated in-house assays will serve as an invaluable tool for both animal phenotyping analysis and clinical investigations.</p>
+        </div>
+        <div class="content-3"><a name="content-3"></a>
+            <h2>Proteomics Facilities</h2><p>Dr. Y. Wang (PI of our team) provides technical advice for advanced mass spectrometry-based technologies, including Isobaric tags for relative and absolute quantitation(iTRAQ) and Stable isotope labeling by amino acids (SILAC), affinity chromatography and multidimensional protein identification technology Gas Chromatography-mass spectrometry(GC-MS).</p><p>&nbsp;</p><p>We have also installed the high throughput <b>Tandem Mass Spectrometry Facility (LC-MS/MS)</b> for functional proteomics and metabolomics, and a <b>high field Nuclear Magnetic Resonance (NMR) spectrometer</b> for chemical and structural biology.</p>
+        </div>
+        <div class="content-4"><a name="content-4"></a>
+            <h2>Transgenic/Knockout Mice Facilities</h2><p>Prof. S.K. Chung’s group has established all necessary facilities for transgenesis platforms, including in-vitro embryo cultural room, microinjection of transgene into pronuclei and oviduct implantation of embryos for generation of transgenic and knockout mouse models and cryopreservation of embryos.</p><p>&nbsp;</p><p>She has generated more than 50 different types of transgenic and knockout mice models for both local and overseas researchers.</p>
+        </div>
+        <div class="content-5"><a name="content-5"></a>
+            <h2>Animal Phenotyping Facilities</h2><p>We have established a comprehensive range of technique platforms for metabolic, cardiovascular and neurological characterization of rodents.</p>
+            <ul>
+            <li><h3>Platforms for Mouse Metabolic Phenotyping analysis:</h3><p>With the funding support by CRF to Prof. K. Lam and Prof. A. Xu, we have established our in-house facilities for metabolic phenotyping analysis, including (1) <u>The Bruker Minispec Body Composition Analyzer</u>, a noninvasive in vivo measurement of lean tissue, body fat mass and body fluid; (2) <u>The Oxymax lab Animal Monitoring System (CLAMS)</u>, a fully automated operation system for simultaneous analysis and real-time monitoring of multiple metabolic parameters, including oxygen consumption, energy expenditure, locomotor activities, food intake and urine excretion; (3) <u>Mouse Activity Wheel Chamber</u> for long-term circadian rhythm and general activity studies; (4) <u>Baxter AS 50 infusion pump-based system</u> for glucose clamping studies; (5) <u>YSI 4600 Thermometer</u> for invasive measurement of body temperature; (6) <u>Biological oxygen monitor</u> for measurement of oxygen consumption and evolution in a variety of samples including respiration, oxidative activity, and cellular metabolism studies.</p><p>&nbsp;</p></li>
+            <li><h3>Cardiovascular Phenotyping Platforms:</h3><p>including (1) <u>TheBP-2000 Blood Pressure Analysis System™(Visitech)</u>fornon-invasive blood pressure analyzer for miceand rats;(2) <u>Wire myographs (DMT system)</u>for measuringreactivity of isolatedsmall bloodvessels;(3)<u>Pressure myograph (DMT and IonOptix systems)</u> for monitoringdilatation and constriction (diameter changes)of small blood vessels under physiological conditionsand real-time intralumen calcium measurements. (4) <u>The Vevo® 2100 High-Resolution Ultrasound Imaging System (Visualsonics Inc.)</u> for non-invasive and high through put evaluation of heart functions in rodents. In addition, Dr. Xia Zhengyuan’s group in our team has established a wide range of techniques and facilities for ex-vivo assessments of cardiac functions.</p><p>&nbsp;</p></li>
+            <li><h3>Microscopic and Imaging Facilities:</h3><p><u>High-field 7 Tesla NMR imaging scanner [Bruker BioSpin MRIPharmaScan® 70/16 -7.0 T (300 MHz 1H)]</u>, at Laboratory of Biomedical Imaging and Signal Processing (BISP) lab established by Prof. E.X. Wu in our team,offers the most advanced capabilities to study soft tissue structures and functions of rodents. These imaging capabilities permit the state-of-the-art in-vivo NMR study of various organs and systems, including brain, heart, liver, kidney, muscle, and cartilage.</p></li>
+            </ul>
+        </div>
+        <div class="content-6"><a name="content-6"></a>
+            <h2>Biobanks for Biomarker Discovery & Clinical Studies</h2><p>Prof. K. Lam and Prof. B. Cheung have established several biobanks for epidemiological investigation of onset and progression of diabetes and cardiovascular diseases in Chinese. In particular, the CRISPS study cohort initiated in 1995/6 comprising of 1925 nondiabetic subjects with prospective follow-up assessments for onset of diabetes and cardiovascular diseases every 3-4 weeks in the last 16 years. We have serum, plasma and DNA samples available for all these subjects, at both baseline and year 3, 6, 9, 12 and 15. Importantly, the dropout rate of this follow-up study is very low. All the samples are now being preserved in several -80&#x2103 freezers and are clearly documented.</p>
+        </div>
+    </div>
+</section>-->
+<script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+<script>
+$(document).ready(function() {
+    $("#content").find("[id^='tab']").hide(); // Hide all content
+    $("#tabs li:first").attr("id","current"); // Activate the first tab
+    $("#content #tab1").fadeIn(); // Show first tab's content
+    
+    $('#tabs a').click(function(e) {
+        e.preventDefault();
+        if ($(this).closest("li").attr("id") == "current"){ //detection for current tab
+         return;       
+        }
+        else{             
+          $("#content").find("[id^='tab']").hide(); // Hide all content
+          $("#tabs li").attr("id",""); //Reset id's
+          $(this).parent().attr("id","current"); // Activate this
+          $('#' + $(this).attr('name')).fadeIn(); // Show content for the current tab
+        }
+    });
+});
+</script>
+
+            
+            <div style="font-size:12px;">
+           	  <p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p>
+            	Copyright ©2018 State Key Laboratory of Pharmaceutical Biotechnology. All Rights Reserved.
+            </div>
+</div>
+
+</body>
+</html>

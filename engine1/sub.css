@@ -1,0 +1,108 @@
+@charset "UTF-8";
+
+/* Page Side Buttons */
+
+#sidebtn a:link {text-decoration: none;color:#000;}
+#sidebtn a:visited {text-decoration: none;color:#000;}
+#sidebtn a:hover {text-decoration: none;color:#09F;}
+
+/* Introduction*/
+
+#intro_body {
+	background-image:url('../img/medicinebuilding.png');
+	background-repeat: no-repeat;
+	background-position: right bottom;
+}
+#intro_content {
+	-moz-box-shadow:inset 0px 1px 0px 0px #bbdaf7;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #bbdaf7;
+	box-shadow:inset 0px 1px 0px 0px #bbdaf7;
+	background:rgba(114,171,229,0.6);
+	-webkit-border-top-left-radius:13px;
+	-moz-border-radius-topleft:13px;
+	border-top-left-radius:13px;
+	-webkit-border-bottom-right-radius:13px;
+	-moz-border-radius-bottomright:13px;
+	border-bottom-right-radius:13px;
+	display:inline-block;
+	color:#006;
+	font-size:18px;
+	height:auto;
+	padding:1cm 3cm 3cm 2cm;
+	text-align:justify;
+}
+
+/* Research */
+
+#research_content {
+	margin-left:1cm;
+	background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,rgba(255,255,127,1)), color-stop(80%,rgba(187,218,247,0)));
+	background: -moz-linear-gradient(left, rgba(255,255,127,1)) 0%, rgba(187,218,247,0) 80%); 
+	background: linear-gradient(to right, rgba(255,255,127,1) 0%,rgba(187,218,247,0) 80%); 
+	-webkit-border-top-left-radius:13px;
+	-moz-border-radius-topleft:13px;
+	border-top-left-radius:13px;
+	-webkit-border-bottom-right-radius:13px;
+	-moz-border-radius-bottomright:13px;
+	border-bottom-right-radius:13px;
+	display:inline-block;
+	color:#006;
+	font-size:18px;
+	height:auto;
+	width:600px;
+	padding:1cm 4cm 3cm 1cm;
+	text-align:left;
+}
+
+#research_pub{
+	margin-left:1cm;
+	-webkit-border-top-left-radius:13px;
+	-moz-border-radius-topleft:13px;
+	border-top-left-radius:13px;
+	-webkit-border-bottom-right-radius:13px;
+	-moz-border-radius-bottomright:13px;
+	border-bottom-right-radius:13px;
+	display:inline-block;
+	border: 1px solid #DDD;
+	box-shadow: 0px 0px 5px #DDD;
+	color:#006;
+	
+	height:auto;
+	width:600px;
+	padding:1cm 4cm 3cm 1cm;
+	text-align:left;
+}
+
+#research_pub li {
+	font-size:14px;
+	list-style:none;
+	height:auto;
+	border-bottom: 1px dotted #666;
+}
+
+#research_patents {
+	margin-left:1cm;
+	background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,rgba(255,255,127,1)), color-stop(80%,rgba(187,218,247,0)));
+	background: -moz-linear-gradient(left, rgba(255,255,127,1)) 0%, rgba(187,218,247,0) 80%); 
+	background: linear-gradient(to right, rgba(255,255,127,1) 0%,rgba(187,218,247,0) 80%); 
+	-webkit-border-top-left-radius:13px;
+	-moz-border-radius-topleft:13px;
+	border-top-left-radius:13px;
+	-webkit-border-bottom-right-radius:13px;
+	-moz-border-radius-bottomright:13px;
+	border-bottom-right-radius:13px;
+	display:inline-block;
+	color:#006;
+	font-size:18px;
+	height:auto;
+	width:600px;
+	padding:1cm 4cm 3cm 1cm;
+	text-align:left;
+}
+#research_patents ul{
+	width:400px;
+}
+#research_patents li{
+	list-style:decimal;
+}
+
