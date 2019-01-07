@@ -1,5 +1,5 @@
 <?php 
-header('Location: http://202.189.107.25/'); 
+header('Location: http://147.8.193.154/'); 
 exit();
 ?>
 Please connect the M.A.S.S. via HKUVPN if you are outside of the campus.
